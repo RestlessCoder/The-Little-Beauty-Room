@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Little Beauty Room - Cynthia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400&display=swap" rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" />
+  <body>
+    <header class="border-b-2 border-black bg-[#f5f7fc] z-20 w-full"> 
+        <div class="container mx-auto px-2 py-1 md:px-4 md:py-3">
+            <div class="flex items-center">
+                <div class="w-5/12 sm:w-1/4">
+                    <img class="w-20 md:w-24" src="main-logo.jpeg" alt="Cynthia">
+                </div>
+                <nav class="ml-auto hidden md:block">
+                    <ul class="flex text-[#9d4960] text-xl uppercase">
+                        <li><a href="index.html" class="px-3 hover:font-bold transition duration-500 font-bold">Home</a></li>
+                        <li><a href="" class="px-3 hover:font-bold transition duration-500 font-medium">About</a></li>
+                        <li><a href="price.html" class="px-3 hover:font-bold transition duration-500 font-medium">Pricelist</a></li>
+                        <li><a href="" class="pl-3 pr-0 hover:font-bold transition duration-500 font-medium">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-navigation w-full">
+                    <div class="menu-bar-icon menu-bar__button-trigger">
+                      <div class="menu-bar-icon__bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Mobile Menu Content -->
+    <div class="mobile-navigation__content fixed top-22 left-0 right-0 bg-[#e7d9de] z-10 shadow-2xl">     
+        <ul class="flex flex-wrap px-4 py-6">
+            <li class="py-2 w-full">
+                <a href="index.html" class="font-bold text-lg uppercase text-[#f5f7fc] hover:opacity-80 transition-opacity">Home</a>
+                </li>
+            <li class="py-2 w-full">
+                <a href="" class="font-bold text-lg uppercase text-[#9d4960] hover:opacity-80 transition-opacity">About</a>
+            </li>
+            <li class="py-2 w-full">
+                <a href="price.html" class="font-bold text-lg uppercase text-[#9d4960] hover:opacity-80 transition-opacity">Pricelist</a>
+            </li>
+            <li class="py-2 w-full">
+                <a href="" class="font-bold text-lg uppercase text-[#9d4960] hover:opacity-80 transition-opacity">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="relative lg:h-full bg-[#e7d9de]">
+        <div class="h-[20rem] sm:h-[24rem] md:h-[32rem] lg:h-full bg-cover lg:bg-contain bg-center bg-no-repeat" style="background-image:url('hero.jpg');">
+            <div class="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2">
+                <svg class="animate-bounce w-[3rem] h-[3rem] md:w-[4rem] md:h-[4rem]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="chevron-force-down">
+                    <path fill="#fff" d="M6.25753788,13.2424621 C5.84748737,12.8324116 5.84748737,12.1675884 6.25753788,11.7575379 C6.66758839,11.3474874 
+                    7.33241161,11.3474874 7.74246212,11.7575379 L12,16.0150758 L16.2575379,11.7575379 C16.6675884,11.3474874 17.3324116,11.3474874 
+                    17.7424621,11.7575379 C18.1525126,12.1675884 18.1525126,12.8324116 17.7424621,13.2424621 L12.7424621,18.2424621 C12.3324116,18.6525126 
+                    11.6675884,18.6525126 11.2575379,18.2424621 L6.25753788,13.2424621 Z M6.25753788,7.24246212 C5.84748737,6.83241161 5.84748737,6.16758839 
+                    6.25753788,5.75753788 C6.66758839,5.34748737 7.33241161,5.34748737 7.74246212,5.75753788 L12,10.0150758 L16.2575379,5.75753788 C16.6675884,
+                    5.34748737 17.3324116,5.34748737 17.7424621,5.75753788 C18.1525126,6.16758839 18.1525126,6.83241161 17.7424621,7.24246212 L12.7424621,
+                    12.2424621 C12.3324116,12.6525126 11.6675884,12.6525126 11.2575379,12.2424621 L6.25753788,7.24246212 Z"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <section class="w-full bg-[#f5f7fc]">
+        <div class="container mx-auto py-16 px-3">
+            <div class="w-full text-center">
+                <h2 class="header-font text-3xl md:text-5xl font-bold text-[#9d4960] mb-8">Our Services</h2>
+            </div>
+            <div class="flex flex-wrap max-w-6xl mx-auto">
+                <div class="w-full pb-4 px-2 md:px-3 sm:w-1/2 lg:w-4/12">  
+                   <div class="relative">
+                        <div class="absolute inset-0 bg-[#9d4960] bg-opacity-0 hover:bg-opacity-50 transition duration-500"></div>
+                        <img src="eye-brow.jpg" class="w-full" alt="Brow">
+                        <h2 class="absolute left-8 bottom-5 header-font text-white text-5xl font-medium">Brow</h2>
+                    </div>
+                </div>
+                <div class="w-full pb-4 px-2 md:px-3 sm:w-1/2 lg:w-4/12">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-[#9d4960] bg-opacity-0 hover:bg-opacity-50 transition duration-500"></div>
+                        <img src="eye-brow.jpg" class="w-full" alt="Brow">
+                        <h2 class="absolute left-8 bottom-5 header-font text-white text-5xl font-medium">Lash</h2>
+                    </div>
+                </div>
+                <div class="w-full pb-4 px-2 md:px-3 sm:w-1/2 lg:w-4/12">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-[#9d4960] bg-opacity-0 hover:bg-opacity-50 transition duration-500"></div>
+                        <img src="eye-brow.jpg" class="w-full" alt="Brow">
+                        <h2 class="absolute left-8 bottom-5 header-font text-white text-5xl font-medium">Nails</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full bg-[#e7d9de]">
+        <div class="container mx-auto py-16 px-3">
+            <div class="w-full text-center">
+                <h2 class="header-font text-3xl md:text-5xl font-bold text-[#9d4960] mb-8">Testimonials</h2>
+            </div>
+            <div class="testimonial-carousel swiper pb-24">
+                <div class="swiper-wrapper flex items-center">
+                    <div class="testimonial-carousel-item swiper-slide">
+                        <div class="testimonials-block rounded-md bg-white px-4 py-8 text-center eq">
+                            <h4 class="text-sm sm:text-base font-medium text-black mb-4">
+                                Cynthia is perfectionist! So friendly and makes you feel very welcome! Her attention to detail is second to
+                                none and she will not let you go out the door unless it's absolutely right! Highly highly recommend! Xxx
+                            </h4>
+                            <p class="font-extrabold text-[#9d4960] mb-0">Donna Macgregor</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-carousel-item swiper-slide">
+                        <div class="testimonials-block rounded-md bg-white px-4 py-8 text-center eq">
+                            <h4 class="text-sm sm:text-base font-medium text-black mb-4">
+                                "Excellent service, love my nails and the variety of colours available. No design is to big,
+                                I have loved every design created for me."
+                            </h4>
+                            <p class="font-extrabold text-[#9d4960] mb-0">Sara Wilson</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-carousel-item swiper-slide">
+                        <div class="testimonials-block rounded-md bg-white px-4 py-8 text-center eq">
+                            <h4 class="text-sm sm:text-base font-medium text-black mb-4">
+                                Absolutely lovely! Lovely service! Had my eyelashes done & they are lovely. Takes time to do it correctly & was
+                                very relaxing throughout the process of the lashes being done
+                            </h4>
+                            <p class="font-extrabold text-[#9d4960] mb-0">Nicole Patton</p>
+                        </div> 
+                    </div>
+                    <div class="testimonial-carousel-item swiper-slide">
+                        <div class="testimonials-block rounded-md bg-white px-4 py-8 text-center eq">
+                            <h4 class="text-sm sm:text-base font-medium text-black mb-4">
+                                Cynthia is fantastic shes so talented and experienced and is very considerate and thoughtful. My nails
+                                are beautiful - Thank you so much!! :D
+                            </h4>
+                            <p class="font-extrabold text-[#9d4960] mb-0">Jade Fox Dougan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-navigation">
+                    <div class="swiper-button-prev hover:opacity-80 transition-opacity"></div>
+                    <div class="swiper-button-next hover:opacity-80 transition-opacity"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="galaxy-wrapper relative">
+        <canvas id="galaxy" width="100%" height="100%"></canvas>
+        <div class="absolute w-full px-3 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 text-center">
+            <h2 class="header-font text-white text-4xl md:text-6xl">Book an Appointment</h2>
+            <a href="" class="inline-block transition duration-500 py-3 sm:py-4 px-8 mt-8 border border-white-500 text-white rounded-full hover:text-black hover:bg-white">Make an appointment</a>
+        </div>
+    </section>
+
+
+    <footer class="w-full bg-gradient-to-r from-[#e7d9de] to-[#f5f7fc]">
+        <div class="container mx-auto pt-16 pb-10 px-3">
+            <div class="flex flex-wrap">
+                <div class="w-full pb-4 px-2 md:px-3 sm:w-1/2 lg:w-2/6 text-center">
+                    <i class="fa-solid fa-home text-4xl text-[#9d4960]"></i>
+                    <h3 class="header-font font-bold text-2xl md:text-4xl my-4 tracking-wide uppercase text-[#9d4960] my-2">Address</h3>
+                    <p class="text-base md:text-xl font-medium">Vernon Street<br/>
+                        Belfast <br/>
+                        BT7 IEW
+                    </p>
+                </div>
+                <div class="w-full pb-4 px-2 md:px-3 sm:w-1/2 lg:w-2/6 text-center mb-3">
+                    <i class="fa-solid fa-clock text-4xl text-[#9d4960]"></i>
+                    <h3 class="header-font font-bold text-2xl md:text-4xl my-4 tracking-wide uppercase text-[#9d4960] my-2">Opening Times</h3>
+                    <p class="text-base md:text-xl mb-3">
+                        <strong>Monday To Friday</strong></br>
+                        <span class="font-medium">10am - 9pm</span>
+                    </p>
+                    <p class="text-base md:text-xl font-medium">
+                        <strong>Saturday</strong></br>
+                        <span class="font-medium">10am - 2pm</span>
+                    </p>
+                </div>
+                <div class="w-full pb-4 px-2 md:px-3 sm:w-1/2 lg:w-2/6 text-center mb-3">
+                    <i class="fa-solid fa-phone text-4xl text-[#9d4960]"></i>
+                    <h3 class="header-font font-bold text-2xl text-2xl md:text-4xl my-4 tracking-wide uppercase text-[#9d4960] my-2">Contact</h3>
+                    <p class="text-base md:text-xl mb-3">
+                        <strong>Phone:</strong></br>
+                        <a href="tel:07857812935" class="text-base md:text-xl font-medium transition duration-500 hover:text-[#9d4960]">07857 812935</a>
+                    </p>
+                    <p class="text-base md:text-xl">
+                        <strong>Email:</strong><br/>
+                        <a href="mailto:siemingl2212@hotmail.co.uk" class="text-base md:text-xl font-medium transition duration-500 hover:text-[#9d4960]">siemingl2212@hotmail.co.uk</a>
+                    </p>
+                    <div class="footer-social mt-4 mb-3">
+                        <ul class="flex justify-center">
+                            <li class="p-1.5 group">
+                                <a href="" class="relative inline-block bg-[#9d4960] w-[3rem] h-[3rem] rounded-full transition duration-500 group-hover:bg-white">
+                                    <i class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition duration-500 group-hover:text-[#9d4960] text-white text-xl fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="p-1.5 group">
+                                <a href="" class="relative inline-block bg-[#9d4960] w-[3rem] h-[3rem] rounded-full transition duration-500 group-hover:bg-white">
+                                    <i class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition duration-500 group-hover:text-[#9d4960] text-white text-xl fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="w-full bg-[#9d4960]">
+        <div class="container py-3 px-3 mx-auto">
+            <p class="text-[#e7d9de] text-sm sm:text-base font-medium text-center sm:text-left">
+                © 2024 <strong>The Little Beauty Room - Cynthia</strong>. All Rights Reserved.</p>
+            </p>
+        </div>
+    </div>
+
+    <script src="./swiper.js"></script>
+	<script src="./app.js"></script>
+  </body>
+</html>
