@@ -1,5 +1,3 @@
-AOS.init();
-
 var WIDTH, HEIGHT, canvas, con, g;
 var pxs = [];
 var rint = 70;
@@ -166,17 +164,6 @@ function initSwiper() {
  
 initSwiper();
 
-var close = document.getElementsByClassName("closebtn");
-var i;
-
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function(){
-    var div = this.parentElement;
-    div.style.opacity = "0";
-    setTimeout(function(){ div.style.display = "none"; }, 600);
-  }
-}
-
 //== Equal Height elements
 
 function setHeight(el, val) {
@@ -225,5 +212,4 @@ function setHeight(el, val) {
       equalheight('.eq')
     })
   })
-  
   
