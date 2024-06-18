@@ -166,6 +166,11 @@ function initSwiper() {
  
 initSwiper();
 
+Fancybox.bind(document.getElementById("gallery"), "[data-fancybox]", {
+    // Your custom options
+    wheel: "slide"
+  });
+
 var close = document.getElementsByClassName("closebtn");
 var i;
 
