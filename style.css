@@ -106,7 +106,7 @@
     max-height:320px;
 }
 
-.gallery-block { display:grid; grid-gap:5px; grid-auto-rows:165px; grid-template-columns: repeat(4, minmax(10px,1fr)); grid-template-rows:150px; grid-auto-flow:dense; }
+.gallery-block { display:grid; grid-gap:8px; grid-auto-rows:250px; grid-template-columns: repeat(3, minmax(10px,1fr)); grid-template-rows:250px; grid-auto-flow:dense; }
 .gallery-block img { width:100%; object-fit:cover; height:100%; }
 .gallery-block .horizontal { grid-column:span 2; }
 .gallery-block .vertical { grid-row:span 2; }
