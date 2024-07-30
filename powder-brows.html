@@ -39,37 +39,6 @@
     <link rel="stylesheet" href="./style.css" />
   <body>
 
-    <!-- <div class="form-popup fixed z-20 bg-opacity-">
-        <div class="form-popup__content">
-            <img src="main-logo.jpeg" alt="Logo">
-            <h3>Want a free voucher for your first treatment</h3>
-            <p>Enter your details below to claim your discount</p>
-            <form id="contactForm">
-                <div class="formGroup flex flex-col my-4">
-                    <label for="fullName">Full Name</label>
-                    <div class="flex items-center">
-                        <input required="" minlength="2" custommaxlength="15" type="text" id="fullName" class="w-full border-b-2 border-black outline-none py-2 border-red-700">               
-                    </div>
-                    <div class="error-text text-red-700 py-2"></div>
-                </div>
-                <div class="formGroup flex flex-col my-4">
-                    <label for="phone">Phone Number</label>
-                    <div class="flex items-center">
-                        <input required="" minlength="2" custommaxlength="15" type="number" id="number" class="w-full border-b-2 border-black outline-none py-2 border-red-700">               
-                    </div>
-                    <div class="error-text text-red-700 py-2"></div>
-                </div>
-                <div class="formGroup flex flex-col my-4">
-                    <label for="phone">Email</label>
-                    <div class="flex items-center">
-                        <input required="" minlength="2" custommaxlength="15" type="email" id="email" class="w-full border-b-2 border-black outline-none py-2 border-red-700">               
-                    </div>
-                    <div class="error-text text-red-700 py-2"></div>
-                </div>
-            </form>
-        </div>
-    </div> -->
-
     <header class="border-b-2 border-black bg-[#f5f7fc] z-20 w-full"> 
         <div class="container mx-auto px-2 py-1 md:px-4 md:py-3">
             <div class="flex items-center">
@@ -81,7 +50,7 @@
                 <nav class="ml-auto hidden md:block">
                     <ul class="flex text-[#9d4960] text-xl uppercase">
                         <li><a href="index.html" class="px-3 hover:font-bold transition duration-500 font-bold">Home</a></li>
-                        <li><a href="#services" class="px-3 hover:font-bold transition duration-500 font-medium smooth-scroll">Services</a></li>
+                        <li><a href="index.html#services" class="px-3 hover:font-bold transition duration-500 font-medium">Services</a></li>
                         <li><a href="about.html" class="px-3 hover:font-bold transition duration-500 font-medium">About</a></li>
                         <li><a href="price.html" class="px-3 hover:font-bold transition duration-500 font-medium">Pricelist</a></li>
                         <li><a href="contact.html" class="pl-3 pr-0 hover:font-bold transition duration-500 font-medium">Contact</a></li>
@@ -104,7 +73,7 @@
                 <a href="index.html" class="font-bold text-lg uppercase text-[#f5f7fc] hover:opacity-80 transition-opacity">Home</a>
             </li>
             <li class="py-2 w-full">
-                <a href="#services" class="font-bold text-lg uppercase text-[#9d4960] hover:opacity-80 transition-opacity smooth-scroll">Services</a>
+                <a href="index.html#services" class="font-bold text-lg uppercase text-[#f5f7fc] hover:opacity-80 transition-opacity">Home</a>
             </li>
             <li class="py-2 w-full">
                 <a href="about.html" class="font-bold text-lg uppercase text-[#9d4960] hover:opacity-80 transition-opacity">About</a>
@@ -118,99 +87,154 @@
         </ul>
     </div>
 
-    <div class="relative lg:h-full bg-[#e7d9de]">
-        <div class="h-[20rem] sm:h-[24rem] md:h-[32rem] lg:h-full bg-cover lg:bg-contain bg-center bg-no-repeat" style="background-image:url('hero.jpg');">
-            <div class="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2">
-                <svg class="animate-bounce w-[3rem] h-[3rem] md:w-[4rem] md:h-[4rem]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="chevron-force-down">
-                    <path fill="#fff" d="M6.25753788,13.2424621 C5.84748737,12.8324116 5.84748737,12.1675884 6.25753788,11.7575379 C6.66758839,11.3474874 
-                    7.33241161,11.3474874 7.74246212,11.7575379 L12,16.0150758 L16.2575379,11.7575379 C16.6675884,11.3474874 17.3324116,11.3474874 
-                    17.7424621,11.7575379 C18.1525126,12.1675884 18.1525126,12.8324116 17.7424621,13.2424621 L12.7424621,18.2424621 C12.3324116,18.6525126 
-                    11.6675884,18.6525126 11.2575379,18.2424621 L6.25753788,13.2424621 Z M6.25753788,7.24246212 C5.84748737,6.83241161 5.84748737,6.16758839 
-                    6.25753788,5.75753788 C6.66758839,5.34748737 7.33241161,5.34748737 7.74246212,5.75753788 L12,10.0150758 L16.2575379,5.75753788 C16.6675884,
-                    5.34748737 17.3324116,5.34748737 17.7424621,5.75753788 C18.1525126,6.16758839 18.1525126,6.83241161 17.7424621,7.24246212 L12.7424621,
-                    12.2424621 C12.3324116,12.6525126 11.6675884,12.6525126 11.2575379,12.2424621 L6.25753788,7.24246212 Z"></path>
-                </svg>
+    <div class="relative bg-[#e7d9de]" data-aos="fade-up" data-aos-duration="1500">
+        <div class="container mx-auto px-2 md:px-4 relative">
+            <div class="py-12 sm:py-20">
+                <div class="xl:w-1/2 xl:pr-16 text-center md:text-left z-10 relative">
+                    <h1 class="text-4xl sm:text-6xl header-font text-[#9d4960] font-medium mb-6" data-aos="fade-up" data-aos-duration="1500">Powder Brows</h1>
+                    <p class="text-md sm:text-xl font-medium pb-4" data-aos="fade-up" data-aos-duration="1500">Powder brows, also known as Powdered or Ombre brows, are a type of semi-permanent makeup procedure. This technique involves depositing pigment into the skin using a machine with a fine needle to create a soft, 
+                    powdered makeup look. The result resembles the effect of filled-in eyebrows with makeup powder or a pencil.</p>
+                    <p class="text-md sm:text-xl font-medium" data-aos="fade-up" data-aos-duration="1500">The process differs from microblading, which uses a manual blade to create hair-like strokes. With powder brows, the artist typically creates a gradient effect that starts lighter at the front of the brow and 
+                    gradually becomes darker towards the tail, mimicking the look of softly powdered eyebrows.</p>
+                    <a href="https://bookings.gettimely.com/cynthialashandbeauty/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F261131%3Fmobile%3DTrue%26params%3D%25253fclient-login%25253dtrue%252526fbclid%25253dIwY2xjawEVnSRleHRuA2FlbQIxMAABHRWImjiIide1xW73Y4NBaotA7hlFvCy9J9F5_SHtmqmpW59rObf9J8NKCA_aem_HNjxl_nwgXmdkisefnqzPw" target="_blank" class="inline-block bg-white transition duration-500 py-3 sm:py-4 px-8 mt-8 border border-white-500 font-medium text-[#9d4960] uppercase rounded-full hover:text-black hover:bg-slate-200" data-aos="fade-up" data-aos-duration="1500">Book Appointment</a>    
+                </div>
+                <div class="xl:w-1/2 absolute top-1/2 -translate-y-1/2 right-0 hidden xl:block">
+                    <img data-aos="fade-left" data-aos-duration="1500" class="max-h-[450px]" src="img/gallery-11.jpg" alt="Powder Brows">
+                </div>
             </div>
         </div>
     </div>
 
-    <section id="services" class="w-full bg-[#f5f7fc]" data-aos="fade-up" data-aos-duration="1500">
+    <section class="w-full bg-[#fff]">
         <div class="container mx-auto py-16 px-3">
             <div class="w-full text-center">
-                <h2 class="header-font text-3xl md:text-5xl font-bold text-[#9d4960] mb-8" data-aos="fade-up" data-aos-duration="1500">Our Services</h2>
+                <h2 class="header-font text-3xl md:text-5xl font-bold text-[#9d4960] mb-8" data-aos="fade-up" data-aos-duration="1500">FAQ and Information</h2>
             </div>
-            <div class="flex flex-wrap max-w-6xl mx-auto">
-                <div class="w-full pb-4 px-2 md:px-3 sm:w-1/2 lg:w-4/12">  
-                   <a href="powder-brows.html" class="relative flex" data-aos="fade-down" data-aos-duration="1500">
-                        <div class="absolute inset-0 bg-[#9d4960] bg-opacity-0 hover:bg-opacity-50 transition duration-500"></div>
-                        <img src="img/eye-brow.jpg" class="w-full" alt="Brow">
-                        <h2 class="absolute left-8 bottom-5 header-font text-white text-5xl font-medium">Brow</h2>
-                   </a>
-                </div>
-                <div class="w-full pb-4 px-2 md:px-3 sm:w-1/2 lg:w-4/12">
-                    <a href="lashes.html" class="relative flex" data-aos="fade-down" data-aos-duration="1500">
-                        <div class="absolute inset-0 bg-[#9d4960] bg-opacity-0 hover:bg-opacity-50 transition duration-500"></div>
-                        <img src="img/lash.jpg" class="w-full" alt="Lash">
-                        <h2 class="absolute left-8 bottom-5 header-font text-white text-5xl font-medium">Lash</h2>
-                    </a>
-                </div>
-                <div class="w-full pb-4 px-2 md:px-3 sm:w-1/2 lg:w-4/12">
-                    <div class="relative flex" data-aos="fade-down" data-aos-duration="1500">
-                        <div class="absolute inset-0 bg-[#9d4960] bg-opacity-0 hover:bg-opacity-50 transition duration-500"></div>
-                        <img src="img/nails.jpg" class="w-full" alt="Nails">
-                        <h2 class="absolute left-8 bottom-5 header-font text-white text-5xl font-medium">Nails</h2>
+            <div class="max-w-5xl mx-auto">
+                <div class="accordion flex-wrap w-full border-b border-[#9d4960]">
+                    <div class="accordion-header flex items-center w-full px-4 py-6">
+                      <span class="header-font text-xl sm:text-2xl font-bold text-[#9d4960]">Pre-existing conditions</span>
+                      <button class="ml-auto">
+                        <svg class="accordion-button-trigger transition duration-500 flex h-[18px] h-[18px] sm:h-[20px] sm:h-[20px]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="20px" width="20px" version="1.1" id="Capa_1" viewBox="0 0 185.344 185.344" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path style="fill:#9d4960;" d="M92.672,144.373c-2.752,0-5.493-1.044-7.593-3.138L3.145,59.301c-4.194-4.199-4.194-10.992,0-15.18    c4.194-4.199,10.987-4.199,15.18,0l74.347,74.341l74.347-74.341c4.194-4.199,10.987-4.199,15.18,0    c4.194,4.194,4.194,10.981,0,15.18l-81.939,81.934C98.166,143.329,95.419,144.373,92.672,144.373z"/>
+                                </g>
+                            </g>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="accordion-body w-full border-black max-h-0 overflow-hidden transition transition-[max-height] duration-500 px-4 font-medium text-md">
+                        <div class="mb-6">
+                            <p class="mb-4">Certain pre-existing conditions prohibit you from getting powder brows. If you fall into any of the categories below, it is not safe for you to get the treatment:</p>
+                            <ul class="tick-list">
+                                <li>People with diabetes (only with doctor’s approval)</li>
+                                <li>People who are undergoing chemo therapy.</li>
+                                <li>People with any bleeding disorders</li>
+                                <li>People who take blood thinning medications (consults your doctor and see if you can pause the meds)</li>
+                                <li>People who’ve recently had Botox injections or fillers in the area (wait at least 2 weeks before you get your brows tattooed)
+                                <li>People with viral infections or diseases</li>
+                                <li>People with skin irritations, Rosacea, or Psoriasis near the treated area.</li>
+                                <li>People whose skin was tanned recently</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="w-full bg-[#9d4960]">
-        <div class="container mx-auto py-16 px-3">
-            <div class="w-full text-center">
-                <h2 class="header-font text-3xl md:text-5xl font-bold text-[#fff] mb-8" data-aos="fade-up" data-aos-duration="1500">Gallery</h2>
-            </div>
-            <div class="max-w-6xl mx-auto" data-aos="fade-down" data-aos-duration="1500">
-                <!-- <div id="gallery" class="gallery-block gallery-item">
-                    <div><a data-fancybox="gallery" data-src="img/gallery-1.jpg"><img src="img/gallery-1.jpg" alt="Girl's Lash"></a></div>
-                    <div class="vertical"><a data-fancybox="gallery" data-src="img/gallery-2.jpg"><img src="img/gallery-2.jpg" alt="Lash"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-3.jpg"><img src="img/gallery-3.jpg" alt="Eyes Lash"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-4.jpg"><img src="img/gallery-4.jpg" alt="Lash and Brow"></a></div>
-                    <div class="vertical"><a data-fancybox="gallery" data-src="img/gallery-5.jpg"><img src="img/gallery-5.jpg" alt="Red Nails"></a></div>
-                    <div class="vertical"><a data-fancybox="gallery" data-src="img/gallery-6.jpg"><img src="img/gallery-6.jpg" alt="Lavender Nails"></a></div>
-                    <div><a class="gallery-fancybox" href="img/gallery-7.jpg" rel="gallery"><img src="img/gallery-7.jpg" alt="Green Nails"></a></div>
-                    <div class="vertical"><a data-fancybox="gallery" data-src="img/gallery-8.jpg"><img src="img/gallery-8.jpg" alt="Rose Nails"></a></div>
-                    <div class="big"><a data-fancybox="gallery" data-src="img/gallery-9.jpg"><img src="img/gallery-9.jpg" alt="Pink Nails"></a></div>
-                    <div class="vertical"><a data-fancybox="gallery" data-src="img/gallery-10.jpg"><img src="img/gallery-10.jpg" alt="Face Lash and Brow"></a></div>
-                    <div class="big"><a data-fancybox="gallery" data-src="img/gallery-11.jpg"><img src="img/gallery-11.jpg" alt="Close Lash and Brow"></a></div>
-                    <div  class="vertical"><a data-fancybox="gallery" data-src="img/gallery-12.jpg"><img src="img/gallery-12.jpg" alt="Close Eyes Lash and Brow"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-13.jpg"><img src="img/gallery-13.jpg" alt="Single Lash and Brow"></a></div>
-                    <div class="vertical"><a data-fancybox="gallery" data-src="img/gallery-14.jpg"><img src="img/gallery-14.jpg" alt="Lash and Brow"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-15.jpg"><img src="img/gallery-15.jpg" alt="Before and After Lash and Brow"></a></div>
-                    <div class="vertical"><a data-fancybox="gallery" data-src="img/gallery-16.jpg"><img src="img/gallery-16.jpg" alt="Asian Lash and Brow"></a></div>
-                    <div class="vertical"><a data-fancybox="gallery" data-src="img/gallery-17.jpg"><img src="img/gallery-17.jpg" alt="White Lash and Brow"></a></div>
-                    <div class="big"><a data-fancybox="gallery" data-src="img/gallery-17.jpg"><img src="img/gallery-18.jpg" alt="Nails"></a></div>
-                </div> -->
-                <div id="gallery" class="gallery-block gallery-item">
-                    <div><a data-fancybox="gallery" data-src="img/gallery-18.jpg"><img src="img/gallery-18.jpg" alt="Nails"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-3.jpg"><img src="img/gallery-3.jpg" alt="Red Nails"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-4.jpg"><img src="img/gallery-4.jpg" alt="Green Nails"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-13.jpg"><img src="img/gallery-13.jpg" alt="Pink Lashes"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-6.jpg"><img src="img/gallery-6.jpg" alt="Lavender Nails"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-7.jpg" rel="gallery"><img src="img/gallery-7.jpg" alt="Green Nails"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-16.jpg"><img src="img/gallery-16.jpg" alt="Before and After Nails"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-9.jpg"><img src="img/gallery-9.jpg" alt="One Eyes Lash"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-2.jpg"><img src="img/gallery-2.jpg" alt="Lash"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-8.jpg"><img src="img/gallery-8.jpg" alt="Multiple Eyes Lash"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-1.jpg"><img src="img/gallery-1.jpg" alt="Girl's Lash"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-10.jpg"><img src="img/gallery-10.jpg" alt="Face Lash and Brow"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-12.jpg"><img src="img/gallery-12.jpg" alt="Asian Eyes Lash and Brow"></a></div>                  
-                    <div><a data-fancybox="gallery" data-src="img/gallery-14.jpg"><img src="img/gallery-14.jpg" alt="Lash and Brow"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-17.jpg"><img src="img/gallery-17.jpg" alt="White Lash and Brow"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-11.jpg"><img src="img/gallery-11.jpg" alt="Close Lash and Brow"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-5.jpg"><img src="img/gallery-5.jpg" alt="Eyes Lash Uplook"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-15.jpg"><img src="img/gallery-15.jpg" alt="Before and After Lash and Brow"></a></div>           
+                <div class="accordion flex-wrap w-full border-b border-[#9d4960]">
+                    <div class="accordion-header flex items-center w-full px-4 py-6">
+                      <span class="header-font text-xl sm:text-2xl font-bold text-[#9d4960]">30 Days Prior</span>
+                      <button class="ml-auto">
+                        <svg class="accordion-button-trigger transition duration-500 flex h-[18px] h-[18px] sm:h-[20px] sm:h-[20px]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="20px" width="20px" version="1.1" id="Capa_1" viewBox="0 0 185.344 185.344" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path style="fill:#9d4960;" d="M92.672,144.373c-2.752,0-5.493-1.044-7.593-3.138L3.145,59.301c-4.194-4.199-4.194-10.992,0-15.18    c4.194-4.199,10.987-4.199,15.18,0l74.347,74.341l74.347-74.341c4.194-4.199,10.987-4.199,15.18,0    c4.194,4.194,4.194,10.981,0,15.18l-81.939,81.934C98.166,143.329,95.419,144.373,92.672,144.373z"/>
+                                </g>
+                            </g>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="accordion-body w-full border-black max-h-0 overflow-hidden transition transition-[max-height] duration-500 px-4 font-medium text-md">
+                        <div class="mb-6">
+                            <ul class="tick-list">
+                                <li>Avoid facials, chemical peels, laser treatments or microdermabrasion</li>
+                                <li>Botox injection and fillers should be performed no less than 4 weeks prior. They can alter 
+                                    the position of your brows and texture of your skin.</li>
+                                <li>Must not be on Antibiotics</li>
+                                <li>Absolutely no Anti-aging and/or Anti-acne products</li>
+                                <li>No Retin A within 30 days of treatment (No Accutane within one year of treatment)</li>
+                                <li>No Surgery of any kind</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+                <div class="accordion flex-wrap w-full border-b border-[#9d4960]">
+                    <div class="accordion-header flex items-center w-full px-4 py-6">
+                      <span class="header-font text-xl sm:text-2xl font-bold text-[#9d4960]">2 Weeks Prior</span>
+                      <button class="ml-auto">
+                        <svg class="accordion-button-trigger transition duration-500 flex h-[18px] h-[18px] sm:h-[20px] sm:h-[20px]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="20px" width="20px" version="1.1" id="Capa_1" viewBox="0 0 185.344 185.344" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path style="fill:#9d4960;" d="M92.672,144.373c-2.752,0-5.493-1.044-7.593-3.138L3.145,59.301c-4.194-4.199-4.194-10.992,0-15.18    c4.194-4.199,10.987-4.199,15.18,0l74.347,74.341l74.347-74.341c4.194-4.199,10.987-4.199,15.18,0    c4.194,4.194,4.194,10.981,0,15.18l-81.939,81.934C98.166,143.329,95.419,144.373,92.672,144.373z"/>
+                                </g>
+                            </g>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="accordion-body w-full border-black max-h-0 overflow-hidden transition transition-[max-height] duration-500 px-4 font-medium text-md">
+                        <div class="mb-6">
+                            <ul class="tick-list">
+                                <li>Do NOT use a tanning bed 2 weeks prior. If you have a sunburn at the time of the appointment, you will be rescheduled and forfeit your deposit.</li>
+                                <li>Avoid waxing or tinting 2 weeks prior to service.</li>
+                            </ul>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="accordion flex-wrap w-full border-b border-[#9d4960]">
+                    <div class="accordion-header flex items-center w-full px-4 py-6">
+                      <span class="header-font text-xl sm:text-2xl font-bold text-[#9d4960]">48 - 72 Hours Prior</span>
+                      <button class="ml-auto">
+                        <svg class="accordion-button-trigger transition duration-500 flex h-[18px] h-[18px] sm:h-[20px] sm:h-[20px]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="20px" width="20px" version="1.1" id="Capa_1" viewBox="0 0 185.344 185.344" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path style="fill:#9d4960;" d="M92.672,144.373c-2.752,0-5.493-1.044-7.593-3.138L3.145,59.301c-4.194-4.199-4.194-10.992,0-15.18    c4.194-4.199,10.987-4.199,15.18,0l74.347,74.341l74.347-74.341c4.194-4.199,10.987-4.199,15.18,0    c4.194,4.194,4.194,10.981,0,15.18l-81.939,81.934C98.166,143.329,95.419,144.373,92.672,144.373z"/>
+                                </g>
+                            </g>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="accordion-body w-full border-black max-h-0 overflow-hidden transition transition-[max-height] duration-500 px-4 font-medium text-md">
+                        <div class="mb-6">
+                            <ul class="minus-list">
+                                <li>Avoid blood thinners such as Ibuprofen, aspirin, Aleve, NSAIDS, vitamin E, fish oil or vitamins unless medically necessary 48-72 hours before. 
+                                Must get dr. note if on prescribed blood thinners.</li>
+                            </ul>
+                        </div>
+                    </div>                   
+                </div>
+                <div class="accordion flex-wrap w-full border-b border-[#9d4960]">
+                    <div class="accordion-header flex items-center w-full px-4 py-6">
+                      <span class="header-font text-xl sm:text-2xl font-bold text-[#9d4960]">24 Hours Prior</span>
+                      <button class="ml-auto">
+                        <svg class="accordion-button-trigger transition duration-500 flex h-[18px] h-[18px] sm:h-[20px] sm:h-[20px]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="20px" width="20px" version="1.1" id="Capa_1" viewBox="0 0 185.344 185.344" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path style="fill:#9d4960;" d="M92.672,144.373c-2.752,0-5.493-1.044-7.593-3.138L3.145,59.301c-4.194-4.199-4.194-10.992,0-15.18    c4.194-4.199,10.987-4.199,15.18,0l74.347,74.341l74.347-74.341c4.194-4.199,10.987-4.199,15.18,0    c4.194,4.194,4.194,10.981,0,15.18l-81.939,81.934C98.166,143.329,95.419,144.373,92.672,144.373z"/>
+                                </g>
+                            </g>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="accordion-body w-full border-black max-h-0 overflow-hidden transition transition-[max-height] duration-500 px-4 font-medium text-md">
+                        <div class="mb-6">
+                            <ul class="minus-list">
+                                <li>Avoid working out the day before and the day of your appointment. No exceptions.</li>
+                                <li>Avoid alcohol or caffeine 24 hours before. No exceptions.</li>
+                            </ul>
+                        </div>
+                    </div>                 
+                </div>
+           
             </div>
         </div>
     </section>

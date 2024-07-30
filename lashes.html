@@ -39,37 +39,6 @@
     <link rel="stylesheet" href="./style.css" />
   <body>
 
-    <!-- <div class="form-popup fixed z-20 bg-opacity-">
-        <div class="form-popup__content">
-            <img src="main-logo.jpeg" alt="Logo">
-            <h3>Want a free voucher for your first treatment</h3>
-            <p>Enter your details below to claim your discount</p>
-            <form id="contactForm">
-                <div class="formGroup flex flex-col my-4">
-                    <label for="fullName">Full Name</label>
-                    <div class="flex items-center">
-                        <input required="" minlength="2" custommaxlength="15" type="text" id="fullName" class="w-full border-b-2 border-black outline-none py-2 border-red-700">               
-                    </div>
-                    <div class="error-text text-red-700 py-2"></div>
-                </div>
-                <div class="formGroup flex flex-col my-4">
-                    <label for="phone">Phone Number</label>
-                    <div class="flex items-center">
-                        <input required="" minlength="2" custommaxlength="15" type="number" id="number" class="w-full border-b-2 border-black outline-none py-2 border-red-700">               
-                    </div>
-                    <div class="error-text text-red-700 py-2"></div>
-                </div>
-                <div class="formGroup flex flex-col my-4">
-                    <label for="phone">Email</label>
-                    <div class="flex items-center">
-                        <input required="" minlength="2" custommaxlength="15" type="email" id="email" class="w-full border-b-2 border-black outline-none py-2 border-red-700">               
-                    </div>
-                    <div class="error-text text-red-700 py-2"></div>
-                </div>
-            </form>
-        </div>
-    </div> -->
-
     <header class="border-b-2 border-black bg-[#f5f7fc] z-20 w-full"> 
         <div class="container mx-auto px-2 py-1 md:px-4 md:py-3">
             <div class="flex items-center">
@@ -81,7 +50,7 @@
                 <nav class="ml-auto hidden md:block">
                     <ul class="flex text-[#9d4960] text-xl uppercase">
                         <li><a href="index.html" class="px-3 hover:font-bold transition duration-500 font-bold">Home</a></li>
-                        <li><a href="#services" class="px-3 hover:font-bold transition duration-500 font-medium smooth-scroll">Services</a></li>
+                        <li><a href="index.html#services" class="px-3 hover:font-bold transition duration-500 font-medium">Services</a></li>
                         <li><a href="about.html" class="px-3 hover:font-bold transition duration-500 font-medium">About</a></li>
                         <li><a href="price.html" class="px-3 hover:font-bold transition duration-500 font-medium">Pricelist</a></li>
                         <li><a href="contact.html" class="pl-3 pr-0 hover:font-bold transition duration-500 font-medium">Contact</a></li>
@@ -104,7 +73,7 @@
                 <a href="index.html" class="font-bold text-lg uppercase text-[#f5f7fc] hover:opacity-80 transition-opacity">Home</a>
             </li>
             <li class="py-2 w-full">
-                <a href="#services" class="font-bold text-lg uppercase text-[#9d4960] hover:opacity-80 transition-opacity smooth-scroll">Services</a>
+                <a href="index.html#services" class="font-bold text-lg uppercase text-[#f5f7fc] hover:opacity-80 transition-opacity">Home</a>
             </li>
             <li class="py-2 w-full">
                 <a href="about.html" class="font-bold text-lg uppercase text-[#9d4960] hover:opacity-80 transition-opacity">About</a>
@@ -118,99 +87,64 @@
         </ul>
     </div>
 
-    <div class="relative lg:h-full bg-[#e7d9de]">
-        <div class="h-[20rem] sm:h-[24rem] md:h-[32rem] lg:h-full bg-cover lg:bg-contain bg-center bg-no-repeat" style="background-image:url('hero.jpg');">
-            <div class="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2">
-                <svg class="animate-bounce w-[3rem] h-[3rem] md:w-[4rem] md:h-[4rem]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="chevron-force-down">
-                    <path fill="#fff" d="M6.25753788,13.2424621 C5.84748737,12.8324116 5.84748737,12.1675884 6.25753788,11.7575379 C6.66758839,11.3474874 
-                    7.33241161,11.3474874 7.74246212,11.7575379 L12,16.0150758 L16.2575379,11.7575379 C16.6675884,11.3474874 17.3324116,11.3474874 
-                    17.7424621,11.7575379 C18.1525126,12.1675884 18.1525126,12.8324116 17.7424621,13.2424621 L12.7424621,18.2424621 C12.3324116,18.6525126 
-                    11.6675884,18.6525126 11.2575379,18.2424621 L6.25753788,13.2424621 Z M6.25753788,7.24246212 C5.84748737,6.83241161 5.84748737,6.16758839 
-                    6.25753788,5.75753788 C6.66758839,5.34748737 7.33241161,5.34748737 7.74246212,5.75753788 L12,10.0150758 L16.2575379,5.75753788 C16.6675884,
-                    5.34748737 17.3324116,5.34748737 17.7424621,5.75753788 C18.1525126,6.16758839 18.1525126,6.83241161 17.7424621,7.24246212 L12.7424621,
-                    12.2424621 C12.3324116,12.6525126 11.6675884,12.6525126 11.2575379,12.2424621 L6.25753788,7.24246212 Z"></path>
-                </svg>
+    <div class="relative bg-[#e7d9de]" data-aos="fade-up" data-aos-duration="1500">
+        <div class="container mx-auto px-2 md:px-4 relative">
+            <div class="py-12 sm:py-20">
+                <div class="xl:w-1/2 xl:pr-16 text-center md:text-left z-10 relative">
+                    <h1 class="text-4xl sm:text-6xl header-font text-[#9d4960] font-medium mb-6" data-aos="fade-up" data-aos-duration="1500">Lashes</h1>
+                </div>
             </div>
         </div>
     </div>
 
-    <section id="services" class="w-full bg-[#f5f7fc]" data-aos="fade-up" data-aos-duration="1500">
-        <div class="container mx-auto py-16 px-3">
-            <div class="w-full text-center">
-                <h2 class="header-font text-3xl md:text-5xl font-bold text-[#9d4960] mb-8" data-aos="fade-up" data-aos-duration="1500">Our Services</h2>
-            </div>
+    <section class="w-full bg-gradient-to-r from-[#9d4960] to-[#b57265]">
+        <div class="container mx-auto py-20 px-3">
             <div class="flex flex-wrap max-w-6xl mx-auto">
-                <div class="w-full pb-4 px-2 md:px-3 sm:w-1/2 lg:w-4/12">  
-                   <a href="powder-brows.html" class="relative flex" data-aos="fade-down" data-aos-duration="1500">
-                        <div class="absolute inset-0 bg-[#9d4960] bg-opacity-0 hover:bg-opacity-50 transition duration-500"></div>
-                        <img src="img/eye-brow.jpg" class="w-full" alt="Brow">
-                        <h2 class="absolute left-8 bottom-5 header-font text-white text-5xl font-medium">Brow</h2>
-                   </a>
+                <div class="w-full mb-8 bg-white p-8 text-center rounded-xl" data-aos="fade-up" data-aos-duration="1500">
+                    <h3 class="header-font text-3xl text-[#9d4960] font-bold mb-5">Classic Lashes</h3>
+                    <p class="text-xl font-medium">Classic Lashes extensions are the most traditional form of eyelash extensions and provide a ready to go mascara effect with extra length, definition and curl. This means that there is a single 1:1 extension applied to each natural lash. As these type of lash extensions are limited to the number of real ones you have, they will look best if you have a normal to abundant number of natural lashes that are thick and strong, and you prefer a natural, mascara look. If you have sparse lashes and want to add volume or density to your lash line, these may not be the best option for you. 
+                    You’ll want to try out either Hybrid or Russian Volume lashes!</p>
                 </div>
-                <div class="w-full pb-4 px-2 md:px-3 sm:w-1/2 lg:w-4/12">
-                    <a href="lashes.html" class="relative flex" data-aos="fade-down" data-aos-duration="1500">
-                        <div class="absolute inset-0 bg-[#9d4960] bg-opacity-0 hover:bg-opacity-50 transition duration-500"></div>
-                        <img src="img/lash.jpg" class="w-full" alt="Lash">
-                        <h2 class="absolute left-8 bottom-5 header-font text-white text-5xl font-medium">Lash</h2>
-                    </a>
+                <div class="w-full mb-8 bg-white p-8 text-center rounded-xl" data-aos="fade-up" data-aos-duration="1500">
+                    <h3 class="header-font text-3xl text-[#9d4960] font-bold mb-5">Hybrid Lashes</h3>
+                    <p class="text-xl font-medium mb-4">Hybrid eyelash extensions are the half way step between a classic set of eyelash extensions and a volume set.</p>
+                    <p class="text-xl font-medium mb-4">A 50/50 mixture of 1:1 lashes and fanned, volume style lashes.</p>
+                    <p class="text-xl font-medium mb-4">Also referred to as a ‘mixed set’, they are versatile in offering a thicker, denser look than classic lashes, but without the uniformity and softness of a typical volume set.</p>
                 </div>
-                <div class="w-full pb-4 px-2 md:px-3 sm:w-1/2 lg:w-4/12">
-                    <div class="relative flex" data-aos="fade-down" data-aos-duration="1500">
-                        <div class="absolute inset-0 bg-[#9d4960] bg-opacity-0 hover:bg-opacity-50 transition duration-500"></div>
-                        <img src="img/nails.jpg" class="w-full" alt="Nails">
-                        <h2 class="absolute left-8 bottom-5 header-font text-white text-5xl font-medium">Nails</h2>
-                    </div>
+                <div class="w-full bg-white p-8 text-center rounded-xl" data-aos="fade-up" data-aos-duration="1500">
+                    <h3 class="header-font text-3xl text-[#9d4960] font-bold mb-5">Volume Lashes</h3>
+                    <p class="text-xl font-medium">The volume extensions are much finer and lighter than classic extensions resulting in a denser, softer and fluffier look than traditional classics. 
+                       Volume lashes are a good option to try if you have sparse natural ones as the multiple extensions fan out and cover any gaps in the lash line giving the effect of density or fullness. 
+                       You also get the same benefits of added length and curl of classic lashes.</p>
                 </div>
+            </div>
+            <div class="w-full text-center mt-12 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500">
+                <a href="https://bookings.gettimely.com/cynthialashandbeauty/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F261131%3Fmobile%3DTrue%26params%3D%25253fclient-login%25253dtrue%252526fbclid%25253dIwY2xjawEVnSRleHRuA2FlbQIxMAABHRWImjiIide1xW73Y4NBaotA7hlFvCy9J9F5_SHtmqmpW59rObf9J8NKCA_aem_HNjxl_nwgXmdkisefnqzPw" target="_blank" class="inline-block bg-white transition duration-500 py-3 sm:py-4 px-8 mt-8 border border-white-500 font-medium text-[#9d4960] uppercase rounded-full hover:text-black hover:bg-slate-200">Book Appointment</a>
             </div>
         </div>
     </section>
-    
-    <section class="w-full bg-[#9d4960]">
+
+    <section class="w-full bg-[#fff]">
         <div class="container mx-auto py-16 px-3">
             <div class="w-full text-center">
-                <h2 class="header-font text-3xl md:text-5xl font-bold text-[#fff] mb-8" data-aos="fade-up" data-aos-duration="1500">Gallery</h2>
+                <h2 class="header-font text-3xl md:text-5xl font-bold text-[#9d4960] mb-8" data-aos="fade-up" data-aos-duration="1500">CLIENT AFTER CARE SHEET</h2>
             </div>
-            <div class="max-w-6xl mx-auto" data-aos="fade-down" data-aos-duration="1500">
-                <!-- <div id="gallery" class="gallery-block gallery-item">
-                    <div><a data-fancybox="gallery" data-src="img/gallery-1.jpg"><img src="img/gallery-1.jpg" alt="Girl's Lash"></a></div>
-                    <div class="vertical"><a data-fancybox="gallery" data-src="img/gallery-2.jpg"><img src="img/gallery-2.jpg" alt="Lash"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-3.jpg"><img src="img/gallery-3.jpg" alt="Eyes Lash"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-4.jpg"><img src="img/gallery-4.jpg" alt="Lash and Brow"></a></div>
-                    <div class="vertical"><a data-fancybox="gallery" data-src="img/gallery-5.jpg"><img src="img/gallery-5.jpg" alt="Red Nails"></a></div>
-                    <div class="vertical"><a data-fancybox="gallery" data-src="img/gallery-6.jpg"><img src="img/gallery-6.jpg" alt="Lavender Nails"></a></div>
-                    <div><a class="gallery-fancybox" href="img/gallery-7.jpg" rel="gallery"><img src="img/gallery-7.jpg" alt="Green Nails"></a></div>
-                    <div class="vertical"><a data-fancybox="gallery" data-src="img/gallery-8.jpg"><img src="img/gallery-8.jpg" alt="Rose Nails"></a></div>
-                    <div class="big"><a data-fancybox="gallery" data-src="img/gallery-9.jpg"><img src="img/gallery-9.jpg" alt="Pink Nails"></a></div>
-                    <div class="vertical"><a data-fancybox="gallery" data-src="img/gallery-10.jpg"><img src="img/gallery-10.jpg" alt="Face Lash and Brow"></a></div>
-                    <div class="big"><a data-fancybox="gallery" data-src="img/gallery-11.jpg"><img src="img/gallery-11.jpg" alt="Close Lash and Brow"></a></div>
-                    <div  class="vertical"><a data-fancybox="gallery" data-src="img/gallery-12.jpg"><img src="img/gallery-12.jpg" alt="Close Eyes Lash and Brow"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-13.jpg"><img src="img/gallery-13.jpg" alt="Single Lash and Brow"></a></div>
-                    <div class="vertical"><a data-fancybox="gallery" data-src="img/gallery-14.jpg"><img src="img/gallery-14.jpg" alt="Lash and Brow"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-15.jpg"><img src="img/gallery-15.jpg" alt="Before and After Lash and Brow"></a></div>
-                    <div class="vertical"><a data-fancybox="gallery" data-src="img/gallery-16.jpg"><img src="img/gallery-16.jpg" alt="Asian Lash and Brow"></a></div>
-                    <div class="vertical"><a data-fancybox="gallery" data-src="img/gallery-17.jpg"><img src="img/gallery-17.jpg" alt="White Lash and Brow"></a></div>
-                    <div class="big"><a data-fancybox="gallery" data-src="img/gallery-17.jpg"><img src="img/gallery-18.jpg" alt="Nails"></a></div>
-                </div> -->
-                <div id="gallery" class="gallery-block gallery-item">
-                    <div><a data-fancybox="gallery" data-src="img/gallery-18.jpg"><img src="img/gallery-18.jpg" alt="Nails"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-3.jpg"><img src="img/gallery-3.jpg" alt="Red Nails"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-4.jpg"><img src="img/gallery-4.jpg" alt="Green Nails"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-13.jpg"><img src="img/gallery-13.jpg" alt="Pink Lashes"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-6.jpg"><img src="img/gallery-6.jpg" alt="Lavender Nails"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-7.jpg" rel="gallery"><img src="img/gallery-7.jpg" alt="Green Nails"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-16.jpg"><img src="img/gallery-16.jpg" alt="Before and After Nails"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-9.jpg"><img src="img/gallery-9.jpg" alt="One Eyes Lash"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-2.jpg"><img src="img/gallery-2.jpg" alt="Lash"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-8.jpg"><img src="img/gallery-8.jpg" alt="Multiple Eyes Lash"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-1.jpg"><img src="img/gallery-1.jpg" alt="Girl's Lash"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-10.jpg"><img src="img/gallery-10.jpg" alt="Face Lash and Brow"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-12.jpg"><img src="img/gallery-12.jpg" alt="Asian Eyes Lash and Brow"></a></div>                  
-                    <div><a data-fancybox="gallery" data-src="img/gallery-14.jpg"><img src="img/gallery-14.jpg" alt="Lash and Brow"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-17.jpg"><img src="img/gallery-17.jpg" alt="White Lash and Brow"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-11.jpg"><img src="img/gallery-11.jpg" alt="Close Lash and Brow"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-5.jpg"><img src="img/gallery-5.jpg" alt="Eyes Lash Uplook"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-15.jpg"><img src="img/gallery-15.jpg" alt="Before and After Lash and Brow"></a></div>           
-                </div>
+            <div class="max-w-5xl mx-auto" data-aos="fade-up" data-aos-duration="1500">
+                <p class="text-md sm:text-xl font-medium mb-4">Now that you have your beautiful extensions, you will need to follow some simple aftercare rules to keep them looking their best.</p>
+                <p class="text-md sm:text-xl font-medium mb-4">Remember, just like nails, your natural lashes grow, so they will need a maintenance appointment after a few weeks – that’s if you wish to keep them looking their best. At an infill we replace the extensions that naturally shed with your natural lashes. Humans shed approximately 3 eyelashes per upper lid, per eye, per day. We apply approximately 100 extensions to each eye, #
+                   so after 7 days you will lose 21 extensions, 14 days 42 extensions, 21 days 63 extensions.</p>
+                <p class="text-md sm:text-xl font-medium mb-4">Eyelash adhesive actually takes 24 hours to completely cure, so the first 24 hours are the most important time to ensure that your lashes will last –</p>
+                <ul class="tick-list flex-wrap text-xl font-medium mb-4">
+                    <li><p><strong>Do not get your extensions wet for the first 24 hours</strong> - exposing your new extensions to any moisture such as steam, high humidity and water will result in the lash glue over-curing and becoming brittle and your extensions will fall off within a few days.</p></li>
+                    <li><p><strong>After 24 hours please keep your extensions clean</strong> - clean them gently and daily with eyelash shampoo and a soft brush. Bodily oils that travel onto your extensions will break down adhesive if not removed.</p></li>
+                    <li><p><strong>Keep oil based products</strong> away from your extensions and limit the use on your face if possible. This oil can travel onto the extensions and break down the glue. Brush your extensions daily to keep them looking neat.</p></li>
+                    <li><p><strong>Do not pick or pull at your extensions</strong>. The adhesive, although safe to use is very strong, picking and pulling will pull your natural lashes out.</p></li>
+                    <li><p><strong>Do not sleep on your face</strong>. Your extensions are delicate, so “face planting” in your pillow will cause your extensions to fall out where they are being “rubbed out” in the night.</p></li>
+                </ul>
+                <p class="text-md sm:text-xl font-medium mb-4">During the spring and autumn, humans experience natural lash sheds. Just like animals, we shed hair from all over our bodies – including our lashes. At these times of year you may find your lashes do not last as long because of this natural shed. After a few weeks our bodies do calm down, so do not be alarmed.</p>
+                <p class="text-md sm:text-xl font-medium mb-4">Lashes also grow in cycles – the average cycle is usually 9-12 weeks. This means that the amount of lashes you have week after week will vary, depending on what stage of your lash cycle you are in. Some weeks your lashes will look fuller that others, and some weeks your retention will be better.</p>
+                <p class="text-md sm:text-xl font-medium mb-4">If you have any problems with your extensions then please let us know ASAP, and within 3 days of your appointment. We do not issue refunds, but instead work with our client to rectify any problems they may have with their lashes. Our products and techniques are tried and tested and, as such, they work. We have a large and happy client base with our clients returning week after week with healthy natural lashes and well-maintained extensions. In the rare event of a client experiencing any problems, it is usually as a result of improper aftercare, or that they may not be a suitable candidate for lash extensions. However, we always work with the client to figure out why they may be having problems.</p>
+                <p class="text-md sm:text-xl font-medium mb-4">Please return for your infill within 3 weeks (unless you wish your extensions to fall out naturally). After 3 weeks you will be charged additionally for the extra work needed, and may be require a full set again</p>
             </div>
         </div>
     </section>

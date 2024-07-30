@@ -230,4 +230,40 @@ function setHeight(el, val) {
       equalheight('.eq')
     })
   })
+
+function scrollTo(element) {
+    window.scroll({
+        behavior: 'smooth',
+        left: 0,
+        top: element.offsetTop - 250
+    });
+}
+
+if (document.querySelector(".smooth-scroll") != null) {
+    document.querySelector(".smooth-scroll").addEventListener('click', (e) => {
+        e.preventDefault();
+        if (document.querySelector("#services") != null) {
+            scrollTo(document.querySelector("#services"));
+        }
+    });
+}
+
   
+const activeClassList = ["max-h-[1600px]", "overflow-visible"]
+
+document.addEventListener("click", e => {
+    if (!e.target.matches(".accordion-button-trigger")) return
+
+    const accordion = e.target.closest(".accordion");
+    const accordionBody = accordion.querySelector(".accordion-body");
+
+    e.target.classList.toggle("rotate-180");
+
+    toggleClasses(accordionBody, activeClassList);
+});
+
+function toggleClasses(element, classArray) {
+    classArray.map(itemClass => {
+        element.classList.toggle(itemClass)
+    });
+}
