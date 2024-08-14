@@ -39,37 +39,6 @@
     <link rel="stylesheet" href="./style.css" />
   <body>
 
-    <!-- <div class="form-popup fixed z-20 bg-opacity-">
-        <div class="form-popup__content">
-            <img src="main-logo.jpeg" alt="Logo">
-            <h3>Want a free voucher for your first treatment</h3>
-            <p>Enter your details below to claim your discount</p>
-            <form id="contactForm">
-                <div class="formGroup flex flex-col my-4">
-                    <label for="fullName">Full Name</label>
-                    <div class="flex items-center">
-                        <input required="" minlength="2" custommaxlength="15" type="text" id="fullName" class="w-full border-b-2 border-black outline-none py-2 border-red-700">               
-                    </div>
-                    <div class="error-text text-red-700 py-2"></div>
-                </div>
-                <div class="formGroup flex flex-col my-4">
-                    <label for="phone">Phone Number</label>
-                    <div class="flex items-center">
-                        <input required="" minlength="2" custommaxlength="15" type="number" id="number" class="w-full border-b-2 border-black outline-none py-2 border-red-700">               
-                    </div>
-                    <div class="error-text text-red-700 py-2"></div>
-                </div>
-                <div class="formGroup flex flex-col my-4">
-                    <label for="phone">Email</label>
-                    <div class="flex items-center">
-                        <input required="" minlength="2" custommaxlength="15" type="email" id="email" class="w-full border-b-2 border-black outline-none py-2 border-red-700">               
-                    </div>
-                    <div class="error-text text-red-700 py-2"></div>
-                </div>
-            </form>
-        </div>
-    </div> -->
-
     <header class="border-b-2 border-black bg-[#f5f7fc] z-20 w-full"> 
         <div class="container mx-auto px-2 py-1 md:px-4 md:py-3">
             <div class="flex items-center">
@@ -118,7 +87,71 @@
         </ul>
     </div>
 
-    <div class="relative lg:h-full bg-[#e7d9de]">
+    <div class="relative bg-[#f5f7fc]">
+        
+        <div class="w-full h-auto pt-6 md:pb-3 flex items-center justify-center gap-4 flex-wrap">
+            
+            <a href="https://www.facebook.com/cynthialashandbeauty?_rdr" target="_blank" class="flex items-center px-4">
+                <button class="w-12 h-12 flex items-center justify-center rounded-lg bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+                    <svg class="transition-all duration-300 group-hover:scale-110"
+                    xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 72 72" fill="none">
+                        <path d="M46.4927 38.6403L47.7973 30.3588H39.7611V24.9759C39.7611 22.7114 40.883 20.4987 44.4706 20.4987H48.1756V13.4465C46.018 13.1028 43.8378 12.9168 41.6527 12.8901C35.0385 12.8901 30.7204 16.8626 30.7204 24.0442V30.3588H23.3887V38.6403H30.7204V58.671H39.7611V38.6403H46.4927Z" fill="#337FFF"/>
+                    </svg>
+                </button>
+                <span class="font-bold text-md pl-3 hover:text-[#9d4960]">Join Us On Facebook</span>
+            </a>
+        
+            <a href="https://www.instagram.com/cynthialashandbeauty/" href="_blank" class="flex items-center px-4">
+                <button class="w-12 h-12 flex items-center justify-center group rounded-lg bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+                    <svg class="transition-all duration-300 group-hover:scale-110" width="34" height="34" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27.4456 35.7808C27.4456 31.1786 31.1776 27.4468 35.7826 27.4468C40.3875 27.4468 44.1216 31.1786 44.1216 35.7808C44.1216 40.383 40.3875 44.1148 35.7826 44.1148C31.1776 44.1148 27.4456 40.383 27.4456 35.7808ZM22.9377 35.7808C22.9377 42.8708 28.6883 48.618 35.7826 48.618C42.8768 48.618 48.6275 42.8708 48.6275 35.7808C48.6275 28.6908 42.8768 22.9436 35.7826 22.9436C28.6883 22.9436 22.9377 28.6908 22.9377 35.7808ZM46.1342 22.4346C46.1339 23.0279 46.3098 23.608 46.6394 24.1015C46.9691 24.595 47.4377 24.9797 47.9861 25.2069C48.5346 25.4342 49.1381 25.4939 49.7204 25.3784C50.3028 25.2628 50.8378 24.9773 51.2577 24.5579C51.6777 24.1385 51.9638 23.6041 52.0799 23.0222C52.1959 22.4403 52.1367 21.8371 51.9097 21.2888C51.6828 20.7406 51.2982 20.2719 50.8047 19.942C50.3112 19.6122 49.7309 19.436 49.1372 19.4358H49.136C48.3402 19.4361 47.5771 19.7522 47.0142 20.3144C46.4514 20.8767 46.1349 21.6392 46.1342 22.4346ZM25.6765 56.1302C23.2377 56.0192 21.9121 55.6132 21.0311 55.2702C19.8632 54.8158 19.0299 54.2746 18.1538 53.4002C17.2777 52.5258 16.7354 51.6938 16.2827 50.5266C15.9393 49.6466 15.533 48.3214 15.4222 45.884C15.3009 43.2488 15.2767 42.4572 15.2767 35.781C15.2767 29.1048 15.3029 28.3154 15.4222 25.678C15.5332 23.2406 15.9425 21.918 16.2827 21.0354C16.7374 19.8682 17.2789 19.0354 18.1538 18.1598C19.0287 17.2842 19.8612 16.7422 21.0311 16.2898C21.9117 15.9466 23.2377 15.5406 25.6765 15.4298C28.3133 15.3086 29.1054 15.2844 35.7826 15.2844C42.4598 15.2844 43.2527 15.3106 45.8916 15.4298C48.3305 15.5408 49.6539 15.9498 50.537 16.2898C51.7049 16.7422 52.5382 17.2854 53.4144 18.1598C54.2905 19.0342 54.8308 19.8682 55.2855 21.0354C55.6289 21.9154 56.0351 23.2406 56.146 25.678C56.2673 28.3154 56.2915 29.1048 56.2915 35.781C56.2915 42.4572 56.2673 43.2466 56.146 45.884C56.0349 48.3214 55.6267 49.6462 55.2855 50.5266C54.8308 51.6938 54.2893 52.5266 53.4144 53.4002C52.5394 54.2738 51.7049 54.8158 50.537 55.2702C49.6565 55.6134 48.3305 56.0194 45.8916 56.1302C43.2549 56.2514 42.4628 56.2756 35.7826 56.2756C29.1024 56.2756 28.3125 56.2514 25.6765 56.1302ZM25.4694 10.9322C22.8064 11.0534 20.9867 11.4754 19.3976 12.0934C17.7518 12.7316 16.3585 13.5878 14.9663 14.977C13.5741 16.3662 12.7195 17.7608 12.081 19.4056C11.4626 20.9948 11.0403 22.8124 10.9191 25.4738C10.7958 28.1394 10.7676 28.9916 10.7676 35.7808C10.7676 42.57 10.7958 43.4222 10.9191 46.0878C11.0403 48.7494 11.4626 50.5668 12.081 52.156C12.7195 53.7998 13.5743 55.196 14.9663 56.5846C16.3583 57.9732 17.7518 58.8282 19.3976 59.4682C20.9897 60.0862 22.8064 60.5082 25.4694 60.6294C28.138 60.7506 28.9893 60.7808 35.7826 60.7808C42.5759 60.7808 43.4286 60.7526 46.0958 60.6294C48.759 60.5082 50.5774 60.0862 52.1676 59.4682C53.8124 58.8282 55.2066 57.9738 56.5989 56.5846C57.9911 55.1954 58.8438 53.7998 59.4842 52.156C60.1026 50.5668 60.5268 48.7492 60.6461 46.0878C60.7674 43.4202 60.7956 42.57 60.7956 35.7808C60.7956 28.9916 60.7674 28.1394 60.6461 25.4738C60.5248 22.8122 60.1026 20.9938 59.4842 19.4056C58.8438 17.7618 57.9889 16.3684 56.5989 14.977C55.2088 13.5856 53.8124 12.7316 52.1696 12.0934C50.5775 11.4754 48.7588 11.0514 46.0978 10.9322C43.4306 10.811 42.5779 10.7808 35.7846 10.7808C28.9913 10.7808 28.138 10.809 25.4694 10.9322Z" fill="url(#paint0_radial_7092_54471)"/>
+                        <path d="M27.4456 35.7808C27.4456 31.1786 31.1776 27.4468 35.7826 27.4468C40.3875 27.4468 44.1216 31.1786 44.1216 35.7808C44.1216 40.383 40.3875 44.1148 35.7826 44.1148C31.1776 44.1148 27.4456 40.383 27.4456 35.7808ZM22.9377 35.7808C22.9377 42.8708 28.6883 48.618 35.7826 48.618C42.8768 48.618 48.6275 42.8708 48.6275 35.7808C48.6275 28.6908 42.8768 22.9436 35.7826 22.9436C28.6883 22.9436 22.9377 28.6908 22.9377 35.7808ZM46.1342 22.4346C46.1339 23.0279 46.3098 23.608 46.6394 24.1015C46.9691 24.595 47.4377 24.9797 47.9861 25.2069C48.5346 25.4342 49.1381 25.4939 49.7204 25.3784C50.3028 25.2628 50.8378 24.9773 51.2577 24.5579C51.6777 24.1385 51.9638 23.6041 52.0799 23.0222C52.1959 22.4403 52.1367 21.8371 51.9097 21.2888C51.6828 20.7406 51.2982 20.2719 50.8047 19.942C50.3112 19.6122 49.7309 19.436 49.1372 19.4358H49.136C48.3402 19.4361 47.5771 19.7522 47.0142 20.3144C46.4514 20.8767 46.1349 21.6392 46.1342 22.4346ZM25.6765 56.1302C23.2377 56.0192 21.9121 55.6132 21.0311 55.2702C19.8632 54.8158 19.0299 54.2746 18.1538 53.4002C17.2777 52.5258 16.7354 51.6938 16.2827 50.5266C15.9393 49.6466 15.533 48.3214 15.4222 45.884C15.3009 43.2488 15.2767 42.4572 15.2767 35.781C15.2767 29.1048 15.3029 28.3154 15.4222 25.678C15.5332 23.2406 15.9425 21.918 16.2827 21.0354C16.7374 19.8682 17.2789 19.0354 18.1538 18.1598C19.0287 17.2842 19.8612 16.7422 21.0311 16.2898C21.9117 15.9466 23.2377 15.5406 25.6765 15.4298C28.3133 15.3086 29.1054 15.2844 35.7826 15.2844C42.4598 15.2844 43.2527 15.3106 45.8916 15.4298C48.3305 15.5408 49.6539 15.9498 50.537 16.2898C51.7049 16.7422 52.5382 17.2854 53.4144 18.1598C54.2905 19.0342 54.8308 19.8682 55.2855 21.0354C55.6289 21.9154 56.0351 23.2406 56.146 25.678C56.2673 28.3154 56.2915 29.1048 56.2915 35.781C56.2915 42.4572 56.2673 43.2466 56.146 45.884C56.0349 48.3214 55.6267 49.6462 55.2855 50.5266C54.8308 51.6938 54.2893 52.5266 53.4144 53.4002C52.5394 54.2738 51.7049 54.8158 50.537 55.2702C49.6565 55.6134 48.3305 56.0194 45.8916 56.1302C43.2549 56.2514 42.4628 56.2756 35.7826 56.2756C29.1024 56.2756 28.3125 56.2514 25.6765 56.1302ZM25.4694 10.9322C22.8064 11.0534 20.9867 11.4754 19.3976 12.0934C17.7518 12.7316 16.3585 13.5878 14.9663 14.977C13.5741 16.3662 12.7195 17.7608 12.081 19.4056C11.4626 20.9948 11.0403 22.8124 10.9191 25.4738C10.7958 28.1394 10.7676 28.9916 10.7676 35.7808C10.7676 42.57 10.7958 43.4222 10.9191 46.0878C11.0403 48.7494 11.4626 50.5668 12.081 52.156C12.7195 53.7998 13.5743 55.196 14.9663 56.5846C16.3583 57.9732 17.7518 58.8282 19.3976 59.4682C20.9897 60.0862 22.8064 60.5082 25.4694 60.6294C28.138 60.7506 28.9893 60.7808 35.7826 60.7808C42.5759 60.7808 43.4286 60.7526 46.0958 60.6294C48.759 60.5082 50.5774 60.0862 52.1676 59.4682C53.8124 58.8282 55.2066 57.9738 56.5989 56.5846C57.9911 55.1954 58.8438 53.7998 59.4842 52.156C60.1026 50.5668 60.5268 48.7492 60.6461 46.0878C60.7674 43.4202 60.7956 42.57 60.7956 35.7808C60.7956 28.9916 60.7674 28.1394 60.6461 25.4738C60.5248 22.8122 60.1026 20.9938 59.4842 19.4056C58.8438 17.7618 57.9889 16.3684 56.5989 14.977C55.2088 13.5856 53.8124 12.7316 52.1696 12.0934C50.5775 11.4754 48.7588 11.0514 46.0978 10.9322C43.4306 10.811 42.5779 10.7808 35.7846 10.7808C28.9913 10.7808 28.138 10.809 25.4694 10.9322Z" fill="url(#paint1_radial_7092_54471)"/>
+                        <defs>
+                        <radialGradient id="paint0_radial_7092_54471" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(17.4144 61.017) scale(65.31 65.2708)">
+                        <stop offset="0.09" stop-color="#FA8F21"/>
+                        <stop offset="0.78" stop-color="#D82D7E"/>
+                        </radialGradient>
+                        <radialGradient id="paint1_radial_7092_54471" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(41.1086 63.257) scale(51.4733 51.4424)">
+                        <stop offset="0.64" stop-color="#8C3AAA" stop-opacity="0"/>
+                        <stop offset="1" stop-color="#8C3AAA"/>
+                        </radialGradient>
+                        </defs>
+                    </svg>        
+                </button>
+                <span class="font-bold text-md pl-3 hover:text-[#9d4960]">Join Us On Instagram</span>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="relative bg-[#f5f7fc] py-10">
+        <div class="container mx-auto px-3">
+            <div class="flex flex-wrap md:flex-nowrap justify-center items-center max-w-6xl mx-auto">
+                <div class="max-w-56 md:max-w-72">
+                    <img src="./img/cynthia.jpg" alt="Cynthia">
+                </div>
+                <div class="text-[#000] pt-5 md:pl-8 md-0 text-center md:text-left">
+                    <h2 class="text-2xl xl:text-4xl font-bold mb-5">Welcome to Cynthia Lash & Beauty</h2>
+                    <p class="text-lg xl:text-xl font-medium mb-3">Here at Cynthia Lash and Beauty, we put you first. Our aim is to enhance your beauty, improve your lifestyle, lift your spirit and promote a sense of well-being.</p>
+                    <p class="text-lg xl:text-xl font-medium mb-3">With over 15 years working in the beauty industry Cynthia offers the latest treatments using only the highest quality products.</p>                    
+                    <p class="text-lg xl:text-xl font-medium mb-3">Cynthia offers a unique and professional one to one serice. Specialising in Semi Permanent Eyelash Extensions, Powder Brows Permanent Make Up and Nail Services</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="galaxy-wrapper relative">
+        <canvas id="galaxy" width="100%" height="100%"></canvas>
+        <div class="absolute w-full px-3 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 text-center">
+            <h2 class="header-font text-white text-4xl md:text-6xl" data-aos="fade-up" data-aos-duration="1500">Gift Voucher</h2>
+            <a href="https://bookings.gettimely.com/cynthialashandbeauty/purchase?uri=https%3A%2F%2Fbook.gettimely.com%2FGiftVoucher%2FDetails%2F261131%3FisMobile%3DTrue%26params%3D%25253fclient-login%25253dtrue" target="_blank" 
+                class="inline-block transition duration-500 py-3 sm:py-4 px-12 mt-8 border border-white-500 text-xl text-white rounded-full hover:text-black hover:bg-white" data-aos="fade-up" data-aos-duration="1500">
+                Buy Gift Voucher
+            </a>
+        </div>
+    </section>
+
+    <!-- <div class="relative lg:h-full bg-[#e7d9de]">
         <div class="h-[20rem] sm:h-[24rem] md:h-[32rem] lg:h-full bg-cover lg:bg-contain bg-center bg-no-repeat" style="background-image:url('hero.jpg');">
             <div class="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2">
                 <svg class="animate-bounce w-[3rem] h-[3rem] md:w-[4rem] md:h-[4rem]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="chevron-force-down">
@@ -132,9 +165,9 @@
                 </svg>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <section id="services" class="w-full bg-[#f5f7fc]" data-aos="fade-up" data-aos-duration="1500">
+    <section id="services" class="w-full bg-[#f5f7fc]">
         <div class="container mx-auto py-16 px-3">
             <div class="w-full text-center">
                 <h2 class="header-font text-3xl md:text-5xl font-bold text-[#9d4960] mb-8" data-aos="fade-up" data-aos-duration="1500">Our Services</h2>
@@ -164,33 +197,63 @@
             </div>
         </div>
     </section>
-    
+
     <section class="w-full bg-[#9d4960]">
+        <div class="container mx-auto py-16 px-3 text-center">
+            <div class="w-full text-center">
+                <h2 class="header-font text-3xl md:text-5xl font-bold text-[#fff] mb-8 lg:mb-12" data-aos="fade-up" data-aos-duration="1500">Get In Touch</h2>
+            </div>
+            <div class="flex flex-wrap xl:flex-nowrap justify-center">
+                <div class="w-full lg:w-1/2 lg:max-w-xl mx-auto mb-8 lg:mb-0" data-aos="fade-up" data-aos-duration="1500">
+                    <iframe width="100%" height="375" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=1000&amp;height=450&amp;hl=en&amp;q=Inside%20Betty's%20Place%20%2048%20University%20Street%20BT7%201HB+(Inside%20Betty's%20Place%20)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
+                </div>
+                <div class="w-full mx-auto lg:w-1/2 lg:pl-4 flex">
+                    <div class="flex flex-wrap items-center">  
+                        <div class="w-full pb-6 px-2 md:px-3" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="md:flex items-start md:text-left">
+                                <a href="tel:07857812935">
+                                    <i class="fa-solid fa-phone text-3xl md:text-4xl text-[#fff] min-w-[45px] md:min-w-[65px] mb-2 md:mb-0"></i>
+                                </a>
+                                <h3 class="header-font font-bold hidden xl:block text-3xl tracking-wide uppercase text-[#fff] mx-4 min-w-[125px] md:min-w-[180px]">CALL</h3>
+                                <p class="text-base sm:text-lg md:text-xl 2xl:text-2xl text-[#fff]">
+                                    <a href="tel:07857812935" class="font-medium hover:underline">07857812935</a>
+                                </p>
+                            </div>
+                        </div>     
+                        <div class="w-full pb-6 px-2 md:px-3" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="md:flex items-start md:text-left">
+                                <a href="mailto:cynthialashandbeauty@hotmail.com">
+                                    <i class="fa-solid fa-envelope text-3xl md:text-4xl text-[#fff] min-w-[45px] md:min-w-[65px] mb-2 md:mb-0"></i>
+                                </a>
+                                <h3 class="header-font font-bold hidden xl:block text-3xl tracking-wide uppercase text-[#fff] mx-4 min-w-[125px] md:min-w-[180px]">EMAIL</h3>
+                                <p class="text-base sm:text-lg md:text-xl 2xl:text-2xl text-[#fff]">
+                                    <a href="mailto:cynthialashandbeauty@hotmail.com" class="font-medium hover:underline">cynthialashandbeauty@hotmail.com</a>
+                                </p>
+                            </div>
+                        </div>    
+                        <div class="w-full pb-6 px-2 md:px-3" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="md:flex items-start md:text-left">
+                                <i class="fa-solid fa-home text-3xl md:text-4xl text-[#fff] min-w-[45px] md:min-w-[65px] mb-2 md:mb-0"></i>
+                                <h3 class="header-font font-bold hidden xl:block text-3xl tracking-wide uppercase text-[#fff] mx-4 min-w-[125px] md:min-w-[180px]">Address</h3>
+                                <p class="text-base sm:text-lg md:text-xl 2xl:text-2xl font-medium text-[#fff] md:text-left">Inside Betty's Place<br/>
+                                    48 University Street
+                                    Belfast <br/>
+                                    BT7 1HB
+                                </p>
+                            </div>
+                        </div>                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- <section class="w-full bg-[#9d4960]">
         <div class="container mx-auto py-16 px-3">
             <div class="w-full text-center">
                 <h2 class="header-font text-3xl md:text-5xl font-bold text-[#fff] mb-8" data-aos="fade-up" data-aos-duration="1500">Gallery</h2>
             </div>
             <div class="max-w-6xl mx-auto" data-aos="fade-down" data-aos-duration="1500">
-                <!-- <div id="gallery" class="gallery-block gallery-item">
-                    <div><a data-fancybox="gallery" data-src="img/gallery-1.jpg"><img src="img/gallery-1.jpg" alt="Girl's Lash"></a></div>
-                    <div class="vertical"><a data-fancybox="gallery" data-src="img/gallery-2.jpg"><img src="img/gallery-2.jpg" alt="Lash"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-3.jpg"><img src="img/gallery-3.jpg" alt="Eyes Lash"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-4.jpg"><img src="img/gallery-4.jpg" alt="Lash and Brow"></a></div>
-                    <div class="vertical"><a data-fancybox="gallery" data-src="img/gallery-5.jpg"><img src="img/gallery-5.jpg" alt="Red Nails"></a></div>
-                    <div class="vertical"><a data-fancybox="gallery" data-src="img/gallery-6.jpg"><img src="img/gallery-6.jpg" alt="Lavender Nails"></a></div>
-                    <div><a class="gallery-fancybox" href="img/gallery-7.jpg" rel="gallery"><img src="img/gallery-7.jpg" alt="Green Nails"></a></div>
-                    <div class="vertical"><a data-fancybox="gallery" data-src="img/gallery-8.jpg"><img src="img/gallery-8.jpg" alt="Rose Nails"></a></div>
-                    <div class="big"><a data-fancybox="gallery" data-src="img/gallery-9.jpg"><img src="img/gallery-9.jpg" alt="Pink Nails"></a></div>
-                    <div class="vertical"><a data-fancybox="gallery" data-src="img/gallery-10.jpg"><img src="img/gallery-10.jpg" alt="Face Lash and Brow"></a></div>
-                    <div class="big"><a data-fancybox="gallery" data-src="img/gallery-11.jpg"><img src="img/gallery-11.jpg" alt="Close Lash and Brow"></a></div>
-                    <div  class="vertical"><a data-fancybox="gallery" data-src="img/gallery-12.jpg"><img src="img/gallery-12.jpg" alt="Close Eyes Lash and Brow"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-13.jpg"><img src="img/gallery-13.jpg" alt="Single Lash and Brow"></a></div>
-                    <div class="vertical"><a data-fancybox="gallery" data-src="img/gallery-14.jpg"><img src="img/gallery-14.jpg" alt="Lash and Brow"></a></div>
-                    <div><a data-fancybox="gallery" data-src="img/gallery-15.jpg"><img src="img/gallery-15.jpg" alt="Before and After Lash and Brow"></a></div>
-                    <div class="vertical"><a data-fancybox="gallery" data-src="img/gallery-16.jpg"><img src="img/gallery-16.jpg" alt="Asian Lash and Brow"></a></div>
-                    <div class="vertical"><a data-fancybox="gallery" data-src="img/gallery-17.jpg"><img src="img/gallery-17.jpg" alt="White Lash and Brow"></a></div>
-                    <div class="big"><a data-fancybox="gallery" data-src="img/gallery-17.jpg"><img src="img/gallery-18.jpg" alt="Nails"></a></div>
-                </div> -->
                 <div id="gallery" class="gallery-block gallery-item">
                     <div><a data-fancybox="gallery" data-src="img/gallery-18.jpg"><img src="img/gallery-18.jpg" alt="Nails"></a></div>
                     <div><a data-fancybox="gallery" data-src="img/gallery-3.jpg"><img src="img/gallery-3.jpg" alt="Red Nails"></a></div>
@@ -213,14 +276,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="w-full bg-[#e7d9de]" data-aos="fade-up" data-aos-duration="1500">
+    <section class="w-full bg-[#e7d9de]">
         <div class="container mx-auto py-16 px-3">
             <div class="w-full text-center">
                 <h2 class="header-font text-3xl md:text-5xl font-bold text-[#9d4960] mb-8" data-aos="fade-up" data-aos-duration="1500">Testimonials</h2>
             </div>
-            <div class="testimonial-carousel swiper pb-24">
+            <div class="testimonial-carousel swiper pb-24" data-aos="fade-up" data-aos-duration="1500">
                 <div class="swiper-wrapper flex items-center">
                     <div class="testimonial-carousel-item swiper-slide">
                         <div class="testimonials-block rounded-md bg-white px-4 py-8 text-center eq">
@@ -275,7 +338,6 @@
         </div>
     </section>
 
-
     <footer class="w-full bg-gradient-to-r from-[#e7d9de] to-[#f5f7fc]" data-aos="fade-up" data-aos-duration="1500">
         <div class="container mx-auto pt-16 pb-10 px-3">
             <div class="flex flex-wrap">
@@ -309,7 +371,7 @@
                     </p>
                     <p class="text-base md:text-xl">
                         <strong>Email:</strong><br/>
-                        <a href="mailto:siemingl2212@hotmail.co.uk" class="text-base md:text-xl font-medium transition duration-500 hover:text-[#9d4960]">siemingl2212@hotmail.co.uk</a>
+                        <a href="mailto:cynthialashandbeauty@hotmail.com" class="text-base md:text-xl font-medium transition duration-500 hover:text-[#9d4960]">cynthialashandbeauty@hotmail.com</a>
                     </p>
                     <div class="footer-social mt-4 mb-3" data-aos="fade-up" data-aos-duration="1500">
                         <ul class="flex justify-center">
