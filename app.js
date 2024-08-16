@@ -1,17 +1,41 @@
 AOS.init();
 
-var WIDTH, HEIGHT, canvas, con, g;
-var pxs = [];
-var rint = 70;
+Fancybox.bind(document.getElementById("gallery"), "[data-fancybox]", {
+    // Your custom options
+    wheel: "slide"
+});
+
+Fancybox.bind(document.getElementById("gallery-slide"), "[data-fancybox]", {
+    // Your custom options
+    wheel: "slide",
+});
+
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+
+
+let WIDTH, HEIGHT, canvas, con, g;
+let pxs = [];
+let rint = 70;
 
 document.addEventListener("DOMContentLoaded", function() {
-    function windowSize() {
-        var galaxyWrapper = document.querySelector('.galaxy-wrapper');
-        WIDTH = galaxyWrapper.clientWidth;
-        HEIGHT = galaxyWrapper.clientHeight;
-        canvas = document.getElementById('galaxy');
-        canvas.width = WIDTH;
-        canvas.height = HEIGHT;
+    function windowSize() {      
+        if (document.querySelector('.galaxy-wrapper') != undefined){
+            var galaxyWrapper = document.querySelector('.galaxy-wrapper');
+            WIDTH = galaxyWrapper.clientWidth;
+            HEIGHT = galaxyWrapper.clientHeight;
+            canvas = document.getElementById('galaxy');
+            canvas.width = WIDTH;
+            canvas.height = HEIGHT;      
+        }
     }
   
     windowSize();
@@ -19,13 +43,14 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('resize', function() {
         windowSize();
     });
-
-    con = canvas.getContext('2d');
-    for (var i = 0; i < 100; i++) {
-        pxs[i] = new Circle();
-        pxs[i].reset();
+    if (document.getElementById('galaxy') != undefined){
+        con = canvas.getContext('2d');
+        for (var i = 0; i < 100; i++) {
+            pxs[i] = new Circle();
+            pxs[i].reset();
+        }
+        requestAnimationFrame(draw);
     }
-    requestAnimationFrame(draw);
 });
 
 function draw() {
@@ -220,6 +245,7 @@ window.addEventListener('scroll', function () {
 
 
 var swiperTestimonial;
+var swiperGallery;
 
 function initSwiper() {
     
@@ -249,26 +275,39 @@ function initSwiper() {
             }
         }
     });
+
+    swiperTestimonial = new Swiper('.gallery-carousel', {
+        slidesPerView: 1,
+        centeredSlides: true,
+        spaceBetween: 20,
+        loop: true,
+        speed: 1800,
+        centeredSlidesBounds: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            1800: {
+                slidesPerView: 4
+            },
+            1200: {
+                slidesPerView: 3
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 0
+            },
+            550: {
+                slidesPerView: 1,
+                spaceBetween: 30
+            }
+        }
+    });
 }
 
  
 initSwiper();
-
-Fancybox.bind(document.getElementById("gallery"), "[data-fancybox]", {
-    // Your custom options
-    wheel: "slide"
-  });
-
-var close = document.getElementsByClassName("closebtn");
-var i;
-
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function(){
-    var div = this.parentElement;
-    div.style.opacity = "0";
-    setTimeout(function(){ div.style.display = "none"; }, 600);
-  }
-}
 
 //== Equal Height elements
 
