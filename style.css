@@ -131,6 +131,12 @@
     .gallery-carousel .swiper-slide img { height:325px; }
 }
 
+.modal { opacity:0; visibility:hidden; z-index:-10; transition:0.3s ease-out; }
+.overlay { opacity:0; visibility:hidden; z-index:-10; transition:0.3s ease-out; }
+
+.modal.open { opacity:1; visibility:visible; z-index:99; }
+.overlay.open { opacity:1; visibility:visible; z-index:99; }
+
 /* Testimonial Carousel */
 .testimonial-carousel .testimonial-carousel-item.swiper-slide-active { transform: scale(1); opacity:1; }
 
@@ -149,7 +155,7 @@
 .gallery-carousel .gallery-carousel-item.swiper-slide-active { transform:scale(1); opacity:1; }
 .gallery-carousel .gallery-carousel-item.swiper-slide-active img { width:100%; }
 .gallery-carousel .gallery-carousel-item { transition:0.3s ease-out;
-    -webkit-transform: scale(0.9); -ms-transform: scale(0.9); transform: scale(0.9); opacity:0.8; transition:0.3s ease-out;
+    -webkit-transform: scale(0.9); -ms-transform: scale(0.9); transform: scale(0.9); opacity:0.6; transition:0.3s ease-out;
 }
 
 .gallery-carousel .swiper-slide { height:auto; }

@@ -394,3 +394,30 @@ function toggleClasses(element, classArray) {
         element.classList.toggle(itemClass)
     });
 }
+
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
+
+document.addEventListener("click", (e) => {
+    if(!e.target.matches(".open-modal-btn")) return
+
+    const modalAttr = e.target.dataset.modal;
+
+    document.querySelector(`#${modalAttr}`).classList.toggle("open")
+    overlay.classList.toggle("open")
+})
+
+document.addEventListener("click", (e) => {
+    if(!e.target.matches(".close-modal-btn")) return
+
+    const modalElem = e.target.parentElement.closest(".modal");
+
+    modalElem.classList.remove("open")
+    overlay.classList.remove("open")
+})
+
+document.addEventListener("click", (e) => {
+    if(!e.target.matches(".overlay")) return
+    modal.classList.remove("open")
+    overlay.classList.remove("open")
+})
