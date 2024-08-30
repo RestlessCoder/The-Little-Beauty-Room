@@ -21,10 +21,10 @@
 /* Mobile Navigation */
 .mobile-navigation {
     display: none;
-    margin-left: 30px;
+    margin-left: auto;
 }
 .mobile-navigation .menu-bar-icon {
-    width: 28px;
+    width: 54px;
     height: 20px;
     position: relative;
     z-index: 10;
@@ -79,7 +79,7 @@
 }
 
 .mobile-navigation__content { visibility:hidden; opacity:0; transition:0.3s ease-out;}
-.mobile-navigation__content.active { top:88px; visibility:visible; opacity:1; }
+.mobile-navigation__content.active { top:114px; visibility:visible; opacity:1; }
 
 @media only screen and (min-width:768px) {
     .mobile-navigation__content { display:none!important;}
@@ -89,8 +89,20 @@
     .mobile-navigation { display:flex; justify-content:flex-end; }
 }
 
+@media only screen and (max-width:640px) {
+    .mobile-navigation__content.active { top:93px; }
+}
+
+@media only screen and (max-width:575px) {
+    .mobile-navigation__content.active { top:85px; }
+}
+
+@media only screen and (max-width:425px) {
+    .mobile-navigation__content.active { top:78px; }
+}
+
 @media only screen and (max-width:320px) {
-    .mobile-navigation__content.active { top:72px; }
+    .mobile-navigation__content.active { top:76px; }
 }
 
 .galaxy-wrapper {
